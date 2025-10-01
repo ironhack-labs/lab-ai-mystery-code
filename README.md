@@ -29,6 +29,30 @@ By completing this lab, you will:
 
 <br />
 
+<br>
+
+## Requirements
+
+- Fork this repo.
+- Clone this repo.
+
+<br>
+
+## Submission
+
+- Upon completion, run the following commands:
+
+```bash
+git add .
+git commit -m "Solved lab"
+git push origin master
+```
+
+- Create a Pull Request so that your work can be checked.
+
+<br>
+
+
 ## :mag: Case Files
 
 You’ll investigate **3 Mystery Snippets** left behind by the rogue AI.  
