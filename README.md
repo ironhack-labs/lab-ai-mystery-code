@@ -100,7 +100,25 @@ function mystery1(arr) {
 :white_check_mark: Tip: Use Claude or ChatGPT:  
 > "What’s wrong with this JS loop? Explain and fix it."
 
+> inside the while loop, the variable i never changes. that means i always stays 0, so the condition i < arr.length will always be true. the result will be that the code will never finish unless it hits the return true line.
+
 <br />
+function mystery1 (arr) {
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] % 2 ===0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(mystery1([1, 3, 5]))
+console.log(mystery1([1, 4, 7]))
+console.log(mystery1([]))
+
+
+
 
 ## :card_index_dividers: Case 2: The Cryptic Function
 
@@ -117,6 +135,31 @@ function q(q){return q.split('').reverse().join('')==q}
 > “Explain this function step-by-step and suggest better variable names.”
 
 <br />
+1.q.split('') — turns the string into an array of its characters.
+→ "racecar" → ["r","a","c","e","c","a","r"]
+
+.reverse() — reverses that array.
+→ ["r","a","c","e","c","a","r"] (same order if palindrome)
+
+.join('') — joins it back into a string.
+→ "racecar"
+
+Compares the reversed string to the original.
+→ Returns true if it’s the same, false otherwise.
+
+3.
+**
+ * Checks if a given string is a palindrome.
+ * A palindrome reads the same forwards and backwards.
+ *
+ * Example:
+ *  isPalindrome("racecar") → true
+ *  isPalindrome("hello")   → false
+ */
+function isPalindrome(text) {
+  const reversed = text.split('').reverse().join('');
+  return reversed === text;
+}
 
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
@@ -141,6 +184,21 @@ function complicatedCalc(a, b) {
 > “Simplify this function in plain JavaScript. What’s the intent?”
 
 <br />
+1.It initializes x = a and y = b.
+Then loops b times.
+Each iteration:
+Increases x by 1.
+Decreases y by 1.
+Finally returns x.
+
+2./**
+ * Returns the sum of two numbers.
+ * The original version simulated addition through looping.
+ */
+function add(a, b) {
+  return a + b;
+}
+
 
 ## ✏️ Final Deliverables
 
