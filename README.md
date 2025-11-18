@@ -81,16 +81,26 @@ Make sure the following are ready:
 ## :card_index_dividers: Case 1: The Infinite Loop
 
 ```js
+//Return true if the array contains any even number. Otherwise return false.
+
+//The index i never increases, so the while loop becomes infinite.
+//If the first number is not even, the loop repeats forever because it never moves forward.
 function mystery1(arr) {
-  let i = 0;
-  while (i < arr.length) {
+  let i = 0; // Start at index 0
+
+  while (i < arr.length) { // Loop while i is inside the array
+    
+    // Check if the current number is even
     if (arr[i] % 2 === 0) {
-      return true;
+      return true; // If it's even, end the function and return true
     }
+
+    i++; // Move to the next index (this was missing!)
   }
+
+  // If we finish the loop without finding an even number
   return false;
 }
-```
 
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
@@ -104,9 +114,21 @@ function mystery1(arr) {
 
 ## :card_index_dividers: Case 2: The Cryptic Function
 
-```js
-function q(q){return q.split('').reverse().join('')==q}
-```
+//It checks whether a string is a palindrome —
+//meaning it reads the same forwards and backwards
+// Check if a word is a palindrome
+
+function isPalindrome(str) {
+
+  // Reverse the string:
+  // 1. Split into characters
+  // 2. Reverse the array
+  // 3. Join back into a string
+  const reversed = str.split('').reverse().join('');
+
+  // Compare original string with the reversed one
+  return reversed === str;
+}
 
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
@@ -120,17 +142,23 @@ function q(q){return q.split('').reverse().join('')==q}
 
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
-```js
-function complicatedCalc(a, b) {
-  let x = a;
-  let y = b;
-  for (let i = 0; i < b; i++) {
-    x = x + 1;
-    y = y - 1;
-  }
-  return x;
-}
-```
+// Corrected Code
+const complicatedCalc = (a, b) => a + b;
+
+/*Let’s walk through it in plain human language:
+-x starts as a
+-y starts as b (but we actually never use the final value of y)
+-The loop runs b times
+Each loop:
+-x increases by 1
+-y decreases by 1 (but who cares, we never return it)
+After doing this b times…
+-x becomes a + b
+-Yep. That’s it.
+-The whole “complicated” loop is literally just:
+-Return a + b
+-The function name should’ve been:
+-function unnecessarilyComplicatedAddition(a, b)
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
