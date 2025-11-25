@@ -1,0 +1,1 @@
+const f=(n)=>[...Array(n)].map((_,i)=>++i%3?i%5?i:'Buzz':i%5?'Fizz':'FizzBuzz')
