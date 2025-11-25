@@ -1,7 +1,19 @@
+<!-- Infinite loop bug fixeda (i++ add)
+
+Functions and variables have meaningful names
+
+Code in the readable format  (proper spacing & structure)
+
+every functions are explained  and comments are written inside
+
+Over-engineered logic simplified and made it one-liner bana
+
+removed useless variables (x, y etc.) -->
+
 ![AI Detective](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # LAB | AI Detective, Fix the Mystery Code
- 
+
 > Focus: Debugging & refactoring AI-generated code  
 > Tools: ChatGPT, Claude, VS Code
 
@@ -11,7 +23,7 @@
 
 > You’ve been recruited by the **Cyber Intelligence Bureau**.  
 > A rogue AI has been generating buggy, obscure, or chaotic JavaScript code across the web.  
-> Your mission? Investigate these “mystery snippets,” figure out what they do, and clean them up.  
+> Your mission? Investigate these “mystery snippets,” figure out what they do, and clean them up.
 
 You’ll be using your own dev skills and your trusted AI assistants (ChatGPT, Claude) to solve the case.
 
@@ -21,9 +33,9 @@ You’ll be using your own dev skills and your trusted AI assistants (ChatGPT, C
 
 By completing this lab, you will:
 
-:white_check_mark: Practice analyzing unknown code snippets  <br>
-:white_check_mark: Learn to ask the right prompts for debugging and explanation  <br>
-:white_check_mark: Refactor code using best practices  <br>
+:white_check_mark: Practice analyzing unknown code snippets <br>
+:white_check_mark: Learn to ask the right prompts for debugging and explanation <br>
+:white_check_mark: Refactor code using best practices <br>
 :white_check_mark: Critically assess and rewrite AI-generated code <br>
 :white_check_mark: Add clear comments and documentation
 
@@ -51,7 +63,6 @@ git push origin master
 - Create a Pull Request so that your work can be checked.
 
 <br>
-
 
 ## :mag: Case Files
 
@@ -93,11 +104,13 @@ function mystery1(arr) {
 ```
 
 ### :brain: Your Mission:
+
 1. **Ask AI** what the code does and why it's broken.
 2. **Fix** the logic. Test it with sample arrays.
 3. **Comment** each step in plain English.
 
-:white_check_mark: Tip: Use Claude or ChatGPT:  
+:white_check_mark: Tip: Use Claude or ChatGPT:
+
 > "What’s wrong with this JS loop? Explain and fix it."
 
 <br />
@@ -105,15 +118,19 @@ function mystery1(arr) {
 ## :card_index_dividers: Case 2: The Cryptic Function
 
 ```js
-function q(q){return q.split('').reverse().join('')==q}
+function q(q) {
+  return q.split("").reverse().join("") == q;
+}
 ```
 
 ### :brain: Your Mission:
+
 1. Decode what this function is really doing.
 2. Rename the function and variables for clarity.
 3. Add comments and reformat it to be readable.
 
-:white_check_mark: Tip: Ask the AI:  
+:white_check_mark: Tip: Ask the AI:
+
 > “Explain this function step-by-step and suggest better variable names.”
 
 <br />
@@ -133,11 +150,13 @@ function complicatedCalc(a, b) {
 ```
 
 ### :brain: Your Mission:
+
 1. Figure out what this function really does.
 2. Refactor it to a **one-liner** (if possible).
 3. Compare your refactor with ChatGPT/Claude suggestions.
 
-:white_check_mark: Optional AI Prompt:  
+:white_check_mark: Optional AI Prompt:
+
 > “Simplify this function in plain JavaScript. What’s the intent?”
 
 <br />
@@ -167,7 +186,7 @@ Example format for `ai-summary.md`:
 ## :brain: Reflection Questions (write in your journal or Notion)
 
 - What kind of AI feedback helped you most: debugging, naming, or rewriting?
-- What did you learn about *your own thinking* by reviewing this code?
+- What did you learn about _your own thinking_ by reviewing this code?
 - Did you rely too much on AI in any step? How could you improve?
 
 <br />
@@ -197,7 +216,7 @@ You just cleaned up some of the chaos left behind by a generative ghost in the m
 The codebase is safer because of you — and you’ve leveled up your AI literacy and debugging skills.
 
 > :brain: Remember: AI can generate 1000 lines in seconds…  
-> But only *you* can make sense of them.
+> But only _you_ can make sense of them.
 
 <br />
 
