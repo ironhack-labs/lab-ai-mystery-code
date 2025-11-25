@@ -87,6 +87,7 @@ function mystery1(arr) {
     if (arr[i] % 2 === 0) {
       return true;
     }
+    i++; // Increment i to move to the next element in the array
   }
   return false;
 }
@@ -121,15 +122,7 @@ function q(q){return q.split('').reverse().join('')==q}
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
 ```js
-function complicatedCalc(a, b) {
-  let x = a;
-  let y = b;
-  for (let i = 0; i < b; i++) {
-    x = x + 1;
-    y = y - 1;
-  }
-  return x;
-}
+const complicatedCalc = (a, b) => a + b;
 ```
 
 ### :brain: Your Mission:
