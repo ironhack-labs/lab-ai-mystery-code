@@ -1,0 +1,12 @@
+### What kind of AI feedback helped you most: debugging, naming, or rewriting?
+# case 1 - I already had the answer but AI helped me to confirm
+# case 2 - After changing the variable name I could find the logic with the methods and lessons
+
+
+### What did you learn about your own thinking by reviewing this code?
+For a better undertsanding we need sometimes to add more lines and be more explicit.
+
+
+###Did you rely too much on AI in any step? How could you improve?
+I could find the notions and methods with what I learned so far and other website as MDN so I didn't rely too much on AI.
+For the case 3 I didn't understand at first what "y" was doing. For this AI save a bit of my time.
