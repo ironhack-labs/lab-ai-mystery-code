@@ -91,7 +91,7 @@ function mystery1(arr) {
   return false;
 }
 ```
-
+<!-- the problem is it never increse i -->
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
 2. **Fix** the logic. Test it with sample arrays.
@@ -105,9 +105,11 @@ function mystery1(arr) {
 ## :card_index_dividers: Case 2: The Cryptic Function
 
 ```js
-function q(q){return q.split('').reverse().join('')==q}
+function palindromeCheck(word){
+  return word.split('').reverse().join('')==word
+  }
 ```
-
+<!-- split the word then reverse it and join them and check if it is like the riginal word or not -->
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
 2. Rename the function and variables for clarity.
@@ -131,6 +133,8 @@ function complicatedCalc(a, b) {
   return x;
 }
 ```
+
+<!-- const complicatedCalc = (a, b) => a + b; -->
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
