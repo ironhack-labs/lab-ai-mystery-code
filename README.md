@@ -90,12 +90,29 @@ function mystery1(arr) {
   }
   return false;
 }
+
 ```
 
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
+ missing i++ 
 2. **Fix** the logic. Test it with sample arrays.
+ ```js
+function mystery1(arr) {
+  let i = 0;
+  while (i < arr.length;i++) {
+    if (arr[i] % 2 === 0) {
+      return true;
+    }
+  }
+  return false;
+}
+const array=[1,2,3,4]
+console.log(mystery1(array))
+```
 3. **Comment** each step in plain English.
+
+ the function takes an array, the while makes a loop for each i if number is even  return true, and if return false it means the number is odd.
 
 :white_check_mark: Tip: Use Claude or ChatGPT:  
 > "What’s wrong with this JS loop? Explain and fix it."
@@ -110,9 +127,18 @@ function q(q){return q.split('').reverse().join('')==q}
 
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
+ the function checks if the string is a palindrome or not.
 2. Rename the function and variables for clarity.
+```js
+  function isPalindrome(str){return str.split('').reverse().join('')==str}
+```
 3. Add comments and reformat it to be readable.
-
+```js
+function isPalindrome(str){
+  return str===str.split('').reverse().join('')
+}
+```
+<!-- the isPalindrome function now is more readable and it takes str and check if the string is Palindrome -->
 :white_check_mark: Tip: Ask the AI:  
 > “Explain this function step-by-step and suggest better variable names.”
 
@@ -134,9 +160,13 @@ function complicatedCalc(a, b) {
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
+this function increment by one the x and decrement by way the y and return the value of x after the loop completed.
 2. Refactor it to a **one-liner** (if possible).
+  ```js
+function complicatedCalc(a, b) {return a+b}
+```
 3. Compare your refactor with ChatGPT/Claude suggestions.
-
+ the same thinking
 :white_check_mark: Optional AI Prompt:  
 > “Simplify this function in plain JavaScript. What’s the intent?”
 
