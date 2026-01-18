@@ -87,6 +87,7 @@ function mystery1(arr) {
     if (arr[i] % 2 === 0) {
       return true;
     }
+    i++;
   }
   return false;
 }
@@ -105,7 +106,10 @@ function mystery1(arr) {
 ## :card_index_dividers: Case 2: The Cryptic Function
 
 ```js
-function q(q){return q.split('').reverse().join('')==q}
+function q(str) {
+  return str.split('').reverse().join('') === str;
+}
+
 ```
 
 ### :brain: Your Mission:
@@ -121,15 +125,16 @@ function q(q){return q.split('').reverse().join('')==q}
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
 ```js
-function complicatedCalc(a, b) {
-  let x = a;
-  let y = b;
+function calcWithLoop(a, b) {
+  let result = a;
+
   for (let i = 0; i < b; i++) {
-    x = x + 1;
-    y = y - 1;
+    result++;
   }
-  return x;
+
+  return result;
 }
+
 ```
 
 ### :brain: Your Mission:
