@@ -102,6 +102,21 @@ function mystery1(arr) {
 
 <br />
 
+# There's a missing increment — i never increases, so the loop runs forever (infinite loop) if arr[0] is odd.
+# The bug: i is never updated inside the while loop body, so the condition i < arr.length is always true.
+# Here's the fix:
+# function mystery1(arr) 
+ # let i = 0;
+#  while (i < arr.length) {
+ #   if (arr[i] % 2 === 0) {
+ #     return true;
+ #   i++; // ← add this
+#  }
+ # return false;
+# }
+
+
+
 ## :card_index_dividers: Case 2: The Cryptic Function
 
 ```js
@@ -115,6 +130,13 @@ function q(q){return q.split('').reverse().join('')==q}
 
 :white_check_mark: Tip: Ask the AI:  
 > “Explain this function step-by-step and suggest better variable names.”
+
+# It checks "is this string a palindrome?" — meaning it reads the same forwards and backwards.
+# q.split('') → breaks the string into individual characters
+# .reverse() → reverses the array
+# .join('') → joins it back into a string
+# == q → compares the reversed string to the original
+# A better name for it would be isPalindrome.
 
 <br />
 
