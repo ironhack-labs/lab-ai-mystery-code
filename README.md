@@ -7,6 +7,8 @@
 
 <br />
 
+
+  return false;
 ## :compass: Mission Briefing
 
 > You’ve been recruited by the **Cyber Intelligence Bureau**.  
@@ -79,7 +81,7 @@ Make sure the following are ready:
 <br />
 
 ## :card_index_dividers: Case 1: The Infinite Loop
-
+<!-- 
 ```js
 function mystery1(arr) {
   let i = 0;
@@ -90,7 +92,17 @@ function mystery1(arr) {
   }
   return false;
 }
-```
+``` -->
+
+function mystery1(arr) {
+  let i = 0;
+
+  while (i < arr.length) {
+    if (arr[i] % 2 === 0) {
+      return true;
+    }
+    i++; 
+  }
 
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
@@ -103,10 +115,14 @@ function mystery1(arr) {
 <br />
 
 ## :card_index_dividers: Case 2: The Cryptic Function
-
+<!-- 
 ```js
 function q(q){return q.split('').reverse().join('')==q}
-```
+``` -->
+function isPalindrome(word) {
+  const reversed = word.split('').reverse().join('');
+  return reversed === word;
+}
 
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
@@ -131,6 +147,8 @@ function complicatedCalc(a, b) {
   return x;
 }
 ```
+
+// this is loop for b 
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
