@@ -87,10 +87,11 @@ function mystery1(arr) {
     if (arr[i] % 2 === 0) {
       return true;
     }
+    i++;  
   }
   return false;
 }
-```
+
 
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
@@ -105,8 +106,11 @@ function mystery1(arr) {
 ## :card_index_dividers: Case 2: The Cryptic Function
 
 ```js
-function q(q){return q.split('').reverse().join('')==q}
-```
+
+function isPalindrome (text)
+  {return text.split('').reverse().join('')===text;
+  }
+
 
 ### :brain: Your Mission:
 1. Decode what this function is really doing.
@@ -121,16 +125,9 @@ function q(q){return q.split('').reverse().join('')==q}
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
 ```js
-function complicatedCalc(a, b) {
-  let x = a;
-  let y = b;
-  for (let i = 0; i < b; i++) {
-    x = x + 1;
-    y = y - 1;
-  }
-  return x;
+function add(a, b) {
+  return a + b;
 }
-```
 
 ### :brain: Your Mission:
 1. Figure out what this function really does.
