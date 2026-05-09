@@ -83,18 +83,28 @@ Make sure the following are ready:
 ```js
 function mystery1(arr) {
   let i = 0;
-  while (i < arr.length) {
+ while (i < arr.length) {
+ 
     if (arr[i] % 2 === 0) {
-      return true;
-    }
+      return true; 
+
+    i++;  
   }
-  return false;
+
+  return false; // aucu
 }
 ```
 
 ### :brain: Your Mission:
 1. **Ask AI** what the code does and why it's broken.
+I asked AI to explain what the code does and why it is broken. It identified that the loop never increments i, causing an infinite loop.
+
+
+
 2. **Fix** the logic. Test it with sample arrays.
+I fixed the logic by adding i++ inside the loop and tested it with sample arrays to confirm it works correctly.
+
+
 3. **Comment** each step in plain English.
 
 :white_check_mark: Tip: Use Claude or ChatGPT:  
