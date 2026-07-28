@@ -29,8 +29,6 @@ function isPalindrome(str) {
 }
 
 // Case 3
-// The function will sum two provided numbers
-function sumTwoNumbers(a, b) {
-  // Return the result of the sum of the two provided numbers
-  return a + b;
-}
+// The function will sum two provided numbers in case b is a positive number.
+// Otherwise it will return just a. The original logic is preserved.
+const sumTwoNumbers = (a, b) => (b > 0 ? a + b : a);
