@@ -99,6 +99,31 @@ function mystery1(arr) {
 
 :white_check_mark: Tip: Use Claude or ChatGPT:  
 > "What’s wrong with this JS loop? Explain and fix it."
+//what the code does//
+According to Claude, the code is supposed to check whether an array has at least one 
+even number in it. if it finds one, return true. if it goes through the whole array 
+without finding one, it should return false.
+
+//whats wrong with it.
+The while loop is broken. i++, which means it will give up after checking just the first
+element.
+Also i never advances, it would go on an infinite loop and never stops being true.
+
+//Fix it.
+function mystery1(arr) {
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] % 2 === 0) {
+      return true;
+    }
+    i++; // <-- move forward before trying the next element
+  }
+  return false;
+}
+//
+
+
+
 
 <br />
 
@@ -115,6 +140,29 @@ function q(q){return q.split('').reverse().join('')==q}
 
 :white_check_mark: Tip: Ask the AI:  
 > “Explain this function step-by-step and suggest better variable names.”
+
+//What function is doing.
+it breaks the string into individual characters, reverses their order, then glues them back together into a string. So it's building the reverse of q. It checks if the string is a palindrome.
+
+//Renaming and reformating function and variables with comments.
+function isPalindrome(str) {
+  // Break the string into an array of individual characters
+  const characters = str.split('');
+
+  // Reverse the order of those characters
+  const reversedCharacters = characters.reverse();
+
+  // Glue them back together into a single string
+  const reversedStr = reversedCharacters.join('');
+
+  // A palindrome reads the same forwards and backwards,
+  // so compare the reversed version to the original
+  return reversedStr === str;
+}
+//
+
+
+
 
 <br />
 
@@ -139,6 +187,11 @@ function complicatedCalc(a, b) {
 
 :white_check_mark: Optional AI Prompt:  
 > “Simplify this function in plain JavaScript. What’s the intent?”
+
+// The intent of the function is addition. 
+function add(a, b) {
+  return a + b;
+}
 
 <br />
 
