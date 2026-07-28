@@ -83,11 +83,15 @@ Make sure the following are ready:
 ```js
 function mystery1(arr) {
   let i = 0;
+
   while (i < arr.length) {
     if (arr[i] % 2 === 0) {
       return true;
     }
+
+    i++;
   }
+
   return false;
 }
 ```
@@ -121,13 +125,13 @@ function q(q){return q.split('').reverse().join('')==q}
 ## :card_index_dividers: Case 3: The Over-Engineered Mess
 
 ```js
-function complicatedCalc(a, b) {
-  let x = a;
-  let y = b;
-  for (let i = 0; i < b; i++) {
+function complicatedCalc(num1, num2) {
+  let x = num1;
+
+  for (let i = 0; i < num2; i++) {
     x = x + 1;
-    y = y - 1;
   }
+
   return x;
 }
 ```
