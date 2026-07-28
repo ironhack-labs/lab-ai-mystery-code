@@ -48,6 +48,6 @@ function complicatedCalc(a, b) {
   return x;
 }”
 :robot: AI suggested: Use descriptive names. Remove unnecessary variables. Remove unnecessary loop. Keep only required logic. 
-:bulb: My Insight: The goal of the function is to calculate a + b.
+:bulb: My Insight: The goal of the function is to calculate a + b in case b is positive. If b is negative or 0 it will return a.
 
 :white_check_mark: Fix: Changed to descriptive names and removed unnecessary logic from the function.
