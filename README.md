@@ -100,6 +100,21 @@ function mystery1(arr) {
 :white_check_mark: Tip: Use Claude or ChatGPT:  
 > "What’s wrong with this JS loop? Explain and fix it."
 
+The problem with the JS loop is that the loop never changes the value of i, so it gets stuck forever.
+function mystery1(arr) {
+  let i = 0;
+
+  while (i < arr.length) {
+    if (arr[i] % 2 === 0) {
+      return true;
+    }
+
+    i++;
+  }
+
+  return false;
+}
+
 <br />
 
 ## :card_index_dividers: Case 2: The Cryptic Function
@@ -115,6 +130,22 @@ function q(q){return q.split('').reverse().join('')==q}
 
 :white_check_mark: Tip: Ask the AI:  
 > “Explain this function step-by-step and suggest better variable names.”
+First, the function name and parameter are both called q, which makes it confusing:
+function q(q)
+The first q is the function name.
+The second q is the parameter (the value passed into the function).
+
+Step 1: q.split('')
+split('') converts a string into an array of individual characters.
+
+Step 2: .reverse()
+reverse() reverses the array.
+
+Step 3: .join('')
+
+Step 4: Compare with ==
+
+
 
 <br />
 
@@ -139,6 +170,15 @@ function complicatedCalc(a, b) {
 
 :white_check_mark: Optional AI Prompt:  
 > “Simplify this function in plain JavaScript. What’s the intent?”
+let y = b;
+
+y = y - 1;
+
+
+is completely unnecessary because:
+y is never returned.
+Its final value does not affect x.
+It is only there to make the function look more complicated.
 
 <br />
 
