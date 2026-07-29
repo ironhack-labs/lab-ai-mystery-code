@@ -1,10 +1,4 @@
-function mystery1(arr) {
-  let i = 0;
-  while (i < arr.length) {
-    if (arr[i] % 2 === 0) {
-      return true;
-    }
-    i++
-  }
-  return false;
+
+function complicatedCalc(a, b) { 
+    return a + b
 }

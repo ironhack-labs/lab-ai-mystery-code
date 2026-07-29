@@ -1,4 +1,1 @@
-
-function complicatedCalc(a, b) { 
-    return a + b
-}
+function isPalindrome(text){return text.split('').reverse().join('') == text}
