@@ -1,0 +1,5 @@
+The AI feedback that helped me the most was debugging and explaining the logic. It didn’t just tell me the correct answer—it showed me why the loop was adding 1 multiple times. At first, I focused only on the statement x = x + 1 and thought the function returned a + 1. The explanation helped me realize that I also needed to consider how many times the loop executed.
+
+By reviewing the code, I learned that I sometimes focus too much on individual lines instead of thinking about how the entire program flows. Tracing the variables through each iteration made it much easier to understand what the function was really doing.
+
+I don’t think I relied too much on AI because I first tried to understand the function myself. However, I could improve by tracing the code on paper or stepping through it with a debugger before asking for help. That way, I can develop my own problem-solving skills and use AI mainly to confirm my reasoning or explain concepts I still don’t understand.
