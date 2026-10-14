@@ -194,7 +194,7 @@ Bring it into your `/rogue-snippets/` folder, analyze it, and submit your fix!
 
 Congratulations, detective.  
 You just cleaned up some of the chaos left behind by a generative ghost in the machine.  
-The codebase is safer because of you — and you’ve leveled up your AI literacy and debugging skills.
+The codebase is safer because of you — and you’ve leveled up your AI literacy and debugging skills!
 
 > :brain: Remember: AI can generate 1000 lines in seconds…  
 > But only *you* can make sense of them.
